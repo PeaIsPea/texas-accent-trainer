@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
   const [text, setText] = useState("Howdy partner! Welcome to Texas. Let's learn how to speak with a true Texan accent.");
@@ -36,6 +37,10 @@ export default function Home() {
 
   return (
     <div style={{ maxWidth: '600px', margin: '40px auto', padding: '24px', fontFamily: 'Arial, sans-serif', backgroundColor: '#fff', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}>
+      <Head>
+        <title>Texas Accent Trainer</title>
+        <link rel="icon" href="/logo.png" /> {/* Đường dẫn tới logo của bạn */}
+      </Head>
       <h1 style={{ textAlign: 'center', color: '#1a202c', marginBottom: '8px' }}>🤠 Texas Accent Trainer</h1>
       <p style={{ textAlign: 'center', color: '#718096', marginTop: 0, marginBottom: '24px' }}>
         Luyện nói tiếng Anh chuẩn giọng Texas với ElevenLabs.
