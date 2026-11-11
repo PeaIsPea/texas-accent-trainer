@@ -1,0 +1,15 @@
+# dependencies & node_modules
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Local environment files (bảo mật tuyệt đối API Key)
+.env*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
